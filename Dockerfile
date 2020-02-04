@@ -5,9 +5,6 @@
 FROM ubuntu:14.04
 # Author: Sai Krishnar
 MAINTAINER Saikrishna <saikrishna787@gmail.com>
-# Set entrypoint command
-RUN apt-get update
-RUN apt-get -y  install ssh*
 #Install apache2 package
 RUN apt-get update && \
      apt-get install -y apache2 && \
