@@ -2,7 +2,7 @@
 # Dockerfile to demonstrate the behaviour of ENTRYPOINT
 ########################################################
 # Build from base image busybox:latest
-FROM busybox:latest
+FROM ubuntu:14.04
 # Author: Sai Krishnar
 MAINTAINER Saikrishna <saikrishna787@gmail.com>
 # Set entrypoint command
