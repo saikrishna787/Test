@@ -3,7 +3,10 @@
 ########################################################
 # Build from base image busybox:latest
 FROM busybox:latest
-# Author: Dr. Peter
-MAINTAINER Dr. Peter <peterindia@gmail.com>
+# Author: Sai Krishnar
+MAINTAINER Saikrishna <saikrishna787@gmail.com>
 # Set entrypoint command
+RUN apt-get update && RUN apt-get install ssh*
 ENTRYPOINT ["echo", "Dockerfile ENTRYPOINT demo"]
+CMD service ssh start
+ENTRYPOINT /bin/bash
