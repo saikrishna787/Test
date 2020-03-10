@@ -12,6 +12,5 @@ RUN apt-get update && \
 # Set the log directory PATH
 ENV APACHE_LOG_DIR /var/log/apache2
 # Launch apache2 server in the foreground
-CMD service apache2 start
 CMD service apache2 status
 
